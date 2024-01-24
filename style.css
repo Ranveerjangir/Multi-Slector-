@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(80, 57, 209);
+}
+.wrapper{
+    width: 370px;
+    margin:100px auto;
+}
+
+.select-btn{
+    background-color: aliceblue;
+    height: 65px;
+    padding: 0 20px;
+    border-radius: 7px;
+    font-size: 22px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.content{
+    background-color: aliceblue;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 7px;
+     /* display: none; */
+}
+  
+
+.select-btn .options li{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+
+}
+.select-btn i{
+    font-size: 31px;
+
+}
+.search i{
+    position: absolute;
+    left: 15px;
+    line-height: 53px;
+color: bisque;
+font-size: 20px;
+
+}
+
+
+.search input{
+    height: 50px;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 15px 0 43px;
+    outline: none;
+    border-radius: 5px;
+    
+    }
+    
+
+.content .search{
+    position: relative;
+
+}
+.wrapper .active .content{
+    display: block;
+    transition: transform 0.3s linear;
+}
+.wrapper .active .select-btn i{
+    transform: rotate(180deg);
+}
+
+
+.content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+}
+/* .options::-webkit-scrollbar{
+    width: 4px;
+}
+.options::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+} */
+.options li{
+height: 50px;
+padding: 0 13px;
+font-size: 21px;
+
+border-radius: 5px;
+
+}
+.options li:hover ,li.selcted{
+    background: wheat;
+} 
