@@ -81,17 +81,6 @@ font-size: 20px;
     overflow-y: auto;
     padding-right: 7px;
 }
-/* .options::-webkit-scrollbar{
-    width: 4px;
-}
-.options::-webkit-scrollbar-track{
-    background: #ccc;
-    border-radius: 25px;
-}
-.options::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 25px;
-} */
 .options li{
 height: 50px;
 padding: 0 13px;
