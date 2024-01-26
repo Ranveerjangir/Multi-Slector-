@@ -5,7 +5,7 @@ searchInp = wrapper.querySelector(".input"),
 Options= wrapper.querySelector(".options");
 
 
-let Names =["ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","shyam","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram"];
+let Names =["ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","ram","shyam","ram","ram","ram","ram","ram","ram","ram","ram"];
 
 function addName(selectedName){
     Options.innerHTML ="";
@@ -27,16 +27,16 @@ function updateName(selectedLi){
 }
 
 
-searchInp.addEventListener("keyup",()=>{
-    let arr= [];
-    let searchedval=searchInp.value.toLocaleLowerCase();
-    arr = Names.filter(data =>{
-        return data.toLocaleLowerCase().startsWith(searchedval);
-    }).map(data =>`<li>${data}</li>`).join("");
-    Options.innerHTML = arr? arr : `<p>Oops! Name not fount</p>`;
-    // console.log(arr);
-    // console.log(searchInp.value);
-})
+// searchInp.addEventListener("keyup",()=>{
+//     let arr= [];
+//     let searchedval=searchInp.value.toLocaleLowerCase();
+//     arr = Names.filter(data =>{
+//         return data.toLocaleLowerCase().startsWith(searchedval);
+//     }).map(data =>`<li>${data}</li>`).join("");
+//     Options.innerHTML = arr? arr : `<p>Oops! Name not fount</p>`;
+//     // console.log(arr);
+//     // console.log(searchInp.value);
+// })
 
 selectBtn.addEventListener("click",()=>{
 
